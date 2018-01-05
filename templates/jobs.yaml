@@ -1,7 +1,7 @@
 apiVersion: batch/v1
 kind: Job
 metadata:
-  name: {{ template "kafka-manager.fullname" . }}-bootstrap
+  name: {{ template "kafka-manager.fullname" . }}-{{ randAlphaNum 5 | lower }}-bootstrap
   labels:
     app: {{ template "kafka-manager.name" . }}
     chart: {{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}

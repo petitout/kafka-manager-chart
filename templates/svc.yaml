@@ -13,7 +13,7 @@ spec:
     - port: {{ .Values.service.externalPort }}
       targetPort: {{ .Values.service.internalPort }}
       protocol: TCP
-      name: kafka-manager
+      name: http-kafka-manager
   selector:
     app: {{ template "kafka-manager.name" . }}
     release: {{ .Release.Name }}
