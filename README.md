@@ -1,3 +1,9 @@
+Forked from [MacTynow/kafka-manager-chart](https://github.com/MacTynow/kafka-manager-chart)
+
+in order to be able to deploy the chart with ISTIO
+
+The following lines are from the original project :
+
 # Kafka manager helm chart
 
 This chart let you install [Kafka manager](https://github.com/yahoo/kafka-manager)
